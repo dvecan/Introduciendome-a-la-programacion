@@ -68,3 +68,38 @@ while(contador <= 10){ //mientras se cumpla lo que hay entre parentesis se ejecu
  for(let i = 0; i < 10; i++){ // se ejecuta mientras i sea menor que 10, y cada vez que se ejecute se le suma 1 a i
     console.log(i);
     }
+
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+//FUNCIONES
+//Nos ayuda a organizar el código, a reutilizarlo y a hacerlo más legible. Es un bloque de código que se puede ejecutar cuando se le llama por su nombre.
+
+let nume1 = 10;
+let nume2 = 20;
+
+//Paso 1 – Definimos la función
+function sumar(n1, n2){ // entre parentesis van los parámetros, que son las variables que se van a usar dentro de la función
+    return n1 + n2; // el return es para devolver un valor, en este caso la suma de n1 y n2
+}
+
+//Paso 2 – Llamamos a la función
+console.log(sumar(nume1, nume2)); // al llamar a la función, le pasamos los argumentos, que son los valores que se van a usar dentro de la función. En este caso, nume1 y nume2.)
+
+//Ejemplo - velocidad = distancia / tiempo
+let distancia = 500;
+let tiempo = 3;
+
+function calcularVelocidad(d, t){
+    return d / t;
+}
+
+console.log(calcularVelocidad(distancia, tiempo));
+
+//Variable global - Puedo acceder a esta variable desde cualquier parte del programa.
+let r = 4.5; 
+
+//Si declaro una variable dentro de llaves {} se la conoce como Variable local
+function calcularPerimetro(radio){
+    //variable local: perimetro. Esta variable fuera de aquí, no existe.
+    let perimetro = 2 * Math.PI * radio;
+    return perimetro;
+}
