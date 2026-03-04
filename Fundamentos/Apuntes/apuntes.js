@@ -62,3 +62,9 @@ while(contador <= 10){ //mientras se cumpla lo que hay entre parentesis se ejecu
         // contador += 2;
 } 
  console.log("Contador es más grande que 10");
+
+ //EL BUCLE FOR() Para ejecutar cosas un número determinado de veces
+
+ for(let i = 0; i < 10; i++){ // se ejecuta mientras i sea menor que 10, y cada vez que se ejecute se le suma 1 a i
+    console.log(i);
+    }
