@@ -103,3 +103,30 @@ function calcularPerimetro(radio){
     let perimetro = 2 * Math.PI * radio;
     return perimetro;
 }
+
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+// ESTRUCTURAS DE DATOS (ARRAYS) - Se utilizan para almacenar datos en una variable para luego acceder a ellos de forma individual
+
+//Declaración de un array
+let frutas = ["manzana", "pera", "melón"]; //en las arrays se cuenta de 0 a X. En este caso, "manzana" es 0, "pera" es 1...
+
+//Longitud del array:
+console.log(frutas.length); //esto devuelve el nº de datos que contiene.
+
+//Acceder a un elemento:
+console.log(frutas[0]); //esto indica qué valor pintar. En este caso, "manzana"
+
+//Se pueden reasignar los valores
+frutas[3] = "sandia";
+
+//En el hueco que encuentre vacío, mete un dato
+frutas.push("piña"); 
+
+//un array puede tener distintos tipos de datos
+let miArray = [1, 2.45, true, "hola"];
+
+//Podemos tener arrays vacíos para añadir elementos después
+let miArray2 = [];
+
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————
